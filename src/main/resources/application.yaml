@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: secureapp
+logging:
+  level:
+    org.springframework.security: TRACE
+
+SECRET_KEY: ad165b11320bc91501ab08613cc3a48a62a6caca4d5c8b14ca82cc313b3b96cd
