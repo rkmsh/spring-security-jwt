@@ -1,8 +1,20 @@
 spring:
   application:
     name: secureapp
+  datasource:
+    url: jdbc:h2:mem:userdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
 logging:
   level:
     org.springframework.security: TRACE
+
 
 SECRET_KEY: ad165b11320bc91501ab08613cc3a48a62a6caca4d5c8b14ca82cc313b3b96cd
