@@ -33,9 +33,9 @@ public class CommonController {
         this.jwtService = jwtService;
     }
 
-    @GetMapping("/hello")
+    @GetMapping("/protected")
     public ResponseEntity<?> hello(){
-        return ResponseEntity.ok().body(Map.of("message", "Hello World!"));
+        return ResponseEntity.ok().body(Map.of("message", "Welcome to SecureApp!"));
     }
 
     @PostMapping("/login")
